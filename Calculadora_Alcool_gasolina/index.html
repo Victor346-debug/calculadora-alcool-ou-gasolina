@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Álcool ou gasolina</title>
+</head>
+<body>
+    <main class="container">
+        <img src="/assets/logo.png" 
+        alt="Calculadora Álcool ou gasolina?"
+        class="logo">
+        <h1 class="title">Qual melhor opção?</h1>
+
+    <form class="form" onsubmit="calcular(event)">
+
+        <label>Álcool (preço por litro):
+            <input 
+            id="alcool"
+            class="input"
+            type="number"
+            placeholder="4.90"
+            min="1"
+            step="0.1"
+            required
+            >
+        </label>
+        
+        <label >Gasolina (preço por litro):
+            <input
+            id="gasolina"
+            class="input" 
+            type="number"
+            placeholder="6.50"
+            min="1"
+            step="0.1"
+            required
+            >
+        </label>
+        
+        <input class="botao" type="submit">
+        
+        <section id="section-result" class="result some">
+
+            <span id="texto-fim">Compensa usar Álcool?</span>
+            <span id="alcool-span">Álcool R$3.90</span>
+            <span id="gasolina-span">Gasolina R$6.80</span>
+        </section>
+        
+        
+    </main>
+    
+</form>
+    <div class="minha-Div">
+        <span class="info">Veja como foi feito o projeto</span>
+        <a href="/oCalculo.html">
+            <img src="/assets/info.png" 
+            alt="Veja como foi feito o projeto"
+            class="info-img">
+
+        </a>
+    </div>
+
+ 
+<section>
+
+    <footer class="footer">
+        <a href="https://www.instagram.com/dev.junior_/">
+            <img src="/assets/download__2_-removebg-preview.png"
+            alt=""
+            class="social-media">
+        </a>
+        
+        <a href="https://github.com/Victor346-debug">
+            <img src="/assets/download-removebg-preview.png"
+            alt=""
+            class="github">
+        </a>
+        
+        <a href="https://www.linkedin.com/in/victor-hugo-cupertino-a66087250/">
+            <img src="/assets/download__1_-removebg-preview.png"
+            alt=""
+            class="linkedin">
+        </a>
+        
+    </footer> 
+    <p class="texto-footer">Criado por Victor hugo ©2023. Todos os direitos reservados</p>
+</section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
